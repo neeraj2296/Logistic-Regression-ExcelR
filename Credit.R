@@ -64,7 +64,7 @@ credit[,"prob1"] <- prob1
 credit[,"pred_values"] <- pred_values
 credit[,"yes_no"] <- yes_no
 
-View(credit[,c(17,18:19)])
+#View(credit[,c(17,18:19)])
 
 table(credit$y,credit$pred_values)
 # Calculate the below metrics
