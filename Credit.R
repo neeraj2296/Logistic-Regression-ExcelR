@@ -32,7 +32,7 @@ plot(pred1)
 
 # GLM function use sigmoid curve to produce desirable results 
 # The output of sigmoid function lies in between 0-1
-mod_glm <- glm(card~.,data=credit)
+mod_glm <- glm(card~.,data=credit,faamily = "binomial")
 summary(mod_glm)
 # To calculate the odds ratio manually we going r going to take exp of coef(model)
 exp(coef(mod_glm))
